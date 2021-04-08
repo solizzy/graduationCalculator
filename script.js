@@ -14,7 +14,7 @@ function graduationCalculator() {
     e.preventDefault();
 
     const birthString = new FormData(e.target).get("birthdate");
-    const outputEl = document.querySelector("#rpg-output span");
+    const outputEl = document.querySelector("#rpg-output");
     const age = calculateAge(birthString);
     const { firstYear, graduateYear } = calculateGradYear(birthString);
 
